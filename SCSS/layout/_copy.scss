@@ -1,0 +1,15 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+
+.copy {
+    background-color: v.$color-background-body;
+
+    &__text {
+        color: v.$color-secondary-400;
+        text-align: center;
+        font-weight: 700;
+        padding: v.$spacer;
+    }
+}

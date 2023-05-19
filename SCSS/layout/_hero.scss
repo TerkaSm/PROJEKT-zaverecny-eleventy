@@ -1,0 +1,68 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+
+.hero {
+    height: 450px;
+    max-width: 1040px;
+    margin: 0 auto;
+
+    &__box {
+        padding: 0 v.$spacer;
+        margin: v.$spacer-double 0;
+
+        @include mx.media-min(900px) {
+            margin-top: clamp(1px, 50%, 150px);
+        }
+    }
+
+    &__text {
+        flex: 1;
+    }
+
+
+    &__title {
+        display: inline-block;
+    
+
+        &--dont {
+            font-family: v.$font-special-2;
+            font-size: clamp(2.3rem, 7vw, 3.2rem);
+
+            font-weight: 400;
+            color: v.$color-primary-400;
+        }
+
+        &--adopt {
+            font-family: v.$font-special;
+            font-size: clamp(4.8rem, 12vw, 6rem);
+            font-weight: 500;
+            color: v.$color-secondary-400;
+            line-height: 1;
+            border-bottom: 2px solid v.$color-secondary-400;
+        }
+    }
+
+    &__sentence {
+        font-size: 14px;
+        font-weight: 700;
+        color: v.$color-secondary-400;
+        padding: v.$spacer 0;
+    }
+
+    &__img {
+        position: absolute;
+        pointer-events: none;
+        bottom: 71px;
+        right: 0;
+
+        width: 50vw;
+        min-width: 350px;
+        max-width: 650px;
+
+        @include mx.media-min(900px) {
+            bottom: 0;
+        }
+    }
+}

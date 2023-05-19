@@ -1,0 +1,30 @@
+//colors
+
+$color-primary-400: #C53607;          //400 jako u font width, "základní" odstín
+$color-secondary-400: #4A3A2B;
+
+$color-background-sections: #EDE9E0;
+$color-background-body: #E8E1D1;
+
+$color-white: #FFFFFF;
+$color-grey-500: #333333;
+$color-grey-700: #171717;
+$color-black: #121212;
+
+//fonts
+
+$font-body: 'Raleway', sans-serif;      //400, 500, 700,
+$font-special: 'Outfit', sans-serif;    //500 Hlavní nadpis v Hero sekci, první část
+$font-special-2: 'Inter', sans-serif;   //400 Hlavní nadpis v Hro sekci, druhá část
+
+// other
+
+$spacer-half: 10px;
+$spacer: 20px;
+$spacer-double: 40px;
+$spacer-medium: 60px;
+$spacer-large: 80px;
+
+// stín sekcí
+
+$shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

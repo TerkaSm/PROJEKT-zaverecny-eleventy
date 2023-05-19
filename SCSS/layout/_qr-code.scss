@@ -1,0 +1,89 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+.qr-code {
+    background-color: v.$color-background-sections;
+    margin-top: clamp(2px, 5vw, v.$spacer-medium);
+    padding: v.$spacer;
+    box-shadow: v.$shadow;
+
+    @include mx.media-min(700px) {
+        display: flex;
+        justify-content: space-between;
+        gap: v.$spacer;
+     }
+
+    &__content {
+        display: flex;
+        height: 355px;
+        padding: v.$spacer;
+        padding-top: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+
+        @include mx.media-min(700px) {
+            text-align: left;
+            padding: v.$spacer;
+         }
+    }
+
+    &__title {
+        flex: 1;
+        font-weight: 500;
+    }
+
+    &__title--change {
+        color: v.$color-secondary-400;
+    }
+
+    &__account {
+        flex: 1;
+    }
+
+    &__account-text {
+        font-size: clamp(0.9rem, 2vw, 1.2rem);
+        font-weight: 700;
+        color: v.$color-primary-400;
+    }
+
+    &__account-number {
+        font-size: clamp(1.5rem, 4vw, 3.3rem);
+        font-weight: 500;
+        color: v.$color-secondary-400;
+    }
+
+    &__butt-ic {
+        flex: 1;
+
+        @include mx.media-min(700px) {
+            display: flex;
+            align-items: flex-end;
+            gap: v.$spacer;
+         }
+    }
+
+    &__icon {
+        margin-top: v.$spacer;
+        flex: 1;
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: grid;
+        place-content: center;
+    }
+
+    &__link {
+        //padding: v.$spacer;
+        text-align: center;
+    }
+
+    &__code {
+        //max-width: 64vw;
+        max-height: 355px;
+        max-width: 100%;
+    }
+
+}

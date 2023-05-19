@@ -1,0 +1,37 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+
+
+.contact-flex {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacer-double;
+
+    @include mx.media-min(650px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__item {
+        text-align: center;
+
+        @include mx.media-min(650px) {
+            text-align: start;
+        }
+    }
+}
+
+.map {
+    margin: clamp(v.$spacer-half, 5vw, v.$spacer-double) auto 0 auto;
+    padding: clamp(v.$spacer, 3vw, v.$spacer);
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+iframe {
+    padding: clamp(v.$spacer, 3vw, v.$spacer);
+}
+

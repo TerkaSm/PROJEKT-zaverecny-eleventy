@@ -1,0 +1,36 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+.menu-large {
+    display: none;
+
+    @include mx.media-min(900px) {
+        display: flex;
+        margin: -75px auto 0 auto;
+        max-width: 650px;
+        color: v.$color-secondary-400;
+        background-color: v.$color-background-sections;
+        justify-content: center;
+    }
+
+    &__item {
+        display: none;
+
+        @include mx.media-min(900px) {
+            display: inline-block;
+            padding: v.$spacer-half v.$spacer;
+            color: v.$color-secondary-400;
+            background-color: v.$color-background-sections;
+            border: 2px solid v.$color-background-sections;
+            font-size: 1.125rem;
+            text-align: center;
+            flex: 1;
+
+            &:hover {
+                transform: scale(1.1);
+                border: 2px solid v.$color-secondary-400;
+            }
+        }
+    }
+}

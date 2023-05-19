@@ -1,0 +1,68 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+
+.page-cat {
+
+    @include mx.media-min(650px) {
+        display: flex;
+        gap: v.$spacer;
+    }
+
+    &__wrapp-img {
+        width: 100%;
+        height: 100%;
+        max-width: 90%;
+        flex: 1;
+        margin: clamp(v.$spacer, 3vw, v.$spacer);
+    }
+
+    &__img {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__checkbox-grids {
+        flex: 1;
+        @include mx.media-min(900px) {
+            display: flex;
+            gap: v.$spacer;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        padding-top: clamp(v.$spacer, 3vw, v.$spacer);
+    }
+
+    &__checkbox-grid {
+        padding: v.$spacer;
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        gap: v.$spacer-half;
+
+        color: v.$color-secondary-400;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+}
+
+
+// magrin pro 2. button
+
+.space-up {
+    margin-top: v.$spacer;
+}
+
+// možno přidat nové položky s checkboxy
+
+.hidden {
+    display: none;
+
+    @include mx.media-min(900px) {
+        display: block;
+        visibility: hidden;
+    }
+}

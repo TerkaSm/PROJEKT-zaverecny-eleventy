@@ -1,0 +1,33 @@
+
+//používá se přes @include mixins.nazev-mixinu;
+
+//gridy
+
+
+@mixin grid-center {
+    display: grid;
+    palce-content: center;
+}
+
+@mixin grid ($pocet) {
+    display: grid;
+    grid-template-columns: repeat($pocet, 1fr);
+}
+
+
+
+
+//media queries
+
+
+@mixin media-min ($pocet) {
+    @media screen and (min-width:$pocet) {
+        @content;
+    }
+}
+
+@mixin media-max ($pocet) {
+    @media screen and (max-width:$pocet) {
+        @content;
+    }
+}

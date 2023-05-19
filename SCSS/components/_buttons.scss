@@ -1,0 +1,33 @@
+@use '../base/variables' as v;
+@use '../base/mixins';
+@use '../base/base';
+
+.button {
+    display: inline-block;
+    font-size: 1.3rem;
+    text-align: center;
+    color: v.$color-secondary-400;
+    border: 2px solid v.$color-secondary-400;
+    padding: v.$spacer-half v.$spacer;
+    min-width: 133px;
+
+    &:hover,
+    &:active {
+        color: v.$color-background-sections;
+        background-color: v.$color-secondary-400;
+        border: 2px solid v.$color-secondary-400;
+    }
+
+    &--primary {
+        color: v.$color-primary-400;
+        font-size: 1rem;
+        border: 2px solid v.$color-primary-400;
+
+        &:hover,
+        &:active {
+            color: v.$color-background-sections;
+            background-color: v.$color-primary-400;
+            border: 2px solid v.$color-primary-400;
+        }
+    }
+}

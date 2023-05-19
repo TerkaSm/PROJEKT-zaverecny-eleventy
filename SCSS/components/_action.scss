@@ -1,0 +1,46 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+.action {
+    background-color: v.$color-background-sections;
+    box-shadow: v.$shadow;
+    padding: clamp(v.$spacer, 3vw, v.$spacer-double);
+    margin-top: clamp(v.$spacer-half, 5vw, v.$spacer);
+
+    display: flex;
+    //flex-direction: column;
+    align-items: center;
+    gap: v.$spacer;
+
+    @include mx.media-min(450px) {
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        padding: v.$spacer v.$spacer-large;
+
+    }
+
+    @include mx.media-min(700px) {
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 calc(100% / 3);
+
+        padding: v.$spacer-double 0 ;
+    }
+
+    &__link {
+        align-self: center;
+        flex: 1;
+    }
+
+    &__icon {
+        width: 8vw;
+        min-width: 55px;
+        max-width: 90px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

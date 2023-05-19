@@ -1,0 +1,67 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+
+
+
+// paddingy a bordery započítány do velikosti boxů
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+  }
+
+
+
+// reset
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+// body
+
+body {
+   font-family: v.$font-body;
+   font-size: 16px;
+   background-color: v.$color-background-body;
+}
+
+h1, h3, h4, h5 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 4vw, 2.1rem);
+    color: v.$color-primary-400;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 1.7rem);
+    color: v.$color-primary-400;
+    font-weight: 500;
+}
+
+
+a {
+    color: v.$color-secondary-400;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: clamp(v.$spacer-half, 3vw, v.$spacer);
+    padding-top: 0;
+}

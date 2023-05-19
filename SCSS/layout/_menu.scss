@@ -1,0 +1,53 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+
+
+
+// Menu pro rozlišení do 900px
+
+.menu {
+    text-align: center;
+    padding: v.$spacer-half 0;
+    background-color: v.$color-secondary-400;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    @include mx.grid(5);
+
+    @include mx.media-min(900px) {
+        display: none;
+    }
+
+    &__icon {
+        padding-bottom: 2px;
+
+        @include mx.media-min(900px) {
+            display: none;
+        }
+    }
+
+
+    &__item {
+        font-size: 14px;
+        color: v.$color-background-sections;
+
+        @include mx.media-min(900px) {
+            display: none;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+
+            @include mx.media-min(900px) {
+                transform: none;
+                border: 2px solid v.$color-secondary-400;
+            }
+        }
+    }
+
+}
+
+
+

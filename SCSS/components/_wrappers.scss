@@ -1,0 +1,26 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+
+// wrapper layoutu
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: clamp(v.$spacer-half, 3vw, v.$spacer);
+    padding-top: 0;
+}
+
+// wrapper centrovač tlačítek
+
+.wrapp-butt {
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+
+    &--space-up {
+        margin-top: clamp(v.$spacer, 4vw, v.$spacer-double)
+    }
+
+}

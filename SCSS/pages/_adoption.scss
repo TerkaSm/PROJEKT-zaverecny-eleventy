@@ -1,0 +1,109 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+
+// Header
+
+.pages-background {
+    height: 80px;
+
+    @include mx.media-min(900px) {
+        background-color: v.$color-background-sections;
+    height: 100px;
+    }
+}
+
+.pages {
+    background-color: v.$color-background-sections;
+    height: 80px;
+
+    @include mx.media-min(900px) {
+        background-color: v.$color-background-sections;
+        padding-bottom: 1px;
+    }
+
+
+    &__arrow-wrapp {
+        padding: v.$spacer;
+
+        @include mx.media-min(900px) {
+            display: none;
+        }
+
+    }
+
+    &__arrow-icon {
+        padding: v.$spacer-half;
+        margin-top: v.$spacer-half;
+
+        width: 14vw;
+        min-width: 55px;
+        max-width: 65px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @include mx.media-min(900px) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        display: none;
+    
+        @include mx.media-min(900px) {
+            display: inline-block;
+            margin-bottom: v.$spacer;
+        }
+    }
+    
+    &__menu {
+        margin-bottom: v.$spacer-half;
+        position: static;
+        margin-top: -85px;
+    }
+    
+    &__contact-bar {
+        @include mx.media-min(900px) {
+            margin-top: 140px;
+        }
+    }
+    
+    &__fb {
+        @include mx.media-min(900px) {
+            position: absolute;
+            top: -140px;
+            right: 0px;
+        }
+    }
+
+    &__img-wrap {
+        width: 100vw;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+//  Main
+
+.pages-main__grid {
+    @include mx.media-min(600px) {
+        @include mx.grid(2);
+        gap: v.$spacer;
+    }
+
+    @include mx.media-min(900px) {
+        @include mx.grid(3);
+    }
+}
+
+
