@@ -11,7 +11,7 @@
 
     @include mx.media-min(650px) {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     &__item {

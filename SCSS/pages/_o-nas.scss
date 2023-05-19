@@ -5,3 +5,24 @@
 
 // obsah této stánky je komponentou
 // /components_paragraphs
+
+
+.minigalery {
+    @include mx.grid(1);
+    gap: 3px;
+
+    @include mx.media-min(650px) {
+        @include mx.grid(3);
+        padding: clamp(v.$spacer, 3vw, v.$spacer-double);
+    }
+
+    &__wrapp {
+        max-width: 100vw;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        border: 2px solid v.$color-secondary-400;
+    }
+}

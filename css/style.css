@@ -787,6 +787,27 @@ a {
   }
 }
 
+.minigalery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3px;
+}
+@media screen and (min-width: 650px) {
+  .minigalery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: clamp(20px, 3vw, 40px);
+  }
+}
+.minigalery__wrapp {
+  max-width: 100vw;
+}
+.minigalery__img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #4A3A2B;
+}
+
 .contact-flex {
   display: flex;
   flex-direction: column;
@@ -795,7 +816,7 @@ a {
 @media screen and (min-width: 650px) {
   .contact-flex {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 }
 .contact-flex__item {
