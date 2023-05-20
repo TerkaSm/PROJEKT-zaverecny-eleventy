@@ -1,0 +1,61 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    &__form-field {
+        margin-bottom: v.$spacer-double;
+    }
+
+    &__question {
+        font-size: 1rem;
+        font-weight: 700;
+        color: v.$color-secondary-400;
+        margin-bottom: v.$spacer-half;
+    }
+
+    &__radio-check {
+        padding-left: v.$spacer;
+    }
+
+    &__label {
+        display: block;
+        margin-top: v.$spacer;
+        margin-bottom: 3px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: v.$color-secondary-400;
+
+        &--radio-check {
+            display: inline-block;
+            margin-top: 3px;
+        }
+    }
+
+    &__input {
+        font-size: 1.2rem;
+        font-weight: 700;
+        width: 100%;
+        height: 2.5rem;
+        border: 2px solid v.$color-secondary-400;
+
+    }
+
+    &__input-radio-check {
+        display: inline-block;
+        height: 1.2rem;
+        padding-left: v.$spacer-double;
+    }
+
+    &__textarea {
+        font-size: 1.2rem;
+        width: 100%;
+        border: 2px solid v.$color-secondary-400;
+    }
+}
+

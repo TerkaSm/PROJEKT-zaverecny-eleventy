@@ -23,159 +23,200 @@ title: Adopční dotazník
 
 
     <section class="text">
-        <form method="post" action="">
-            <fieldset>
-                <legend></legend>
+        <form class="form" method="post" action="">
 
-            </fieldset>
+            <div class="form__form-field">
+                <label class="form__label" for="jmeno">Jméno</label>
+                <input class="form__input" type="text" name="jmeno" id="jmeno" maxlength="15" autofocus>
 
-            <fieldset>
-                <legend>Osobní údaje</legend>
-                
-                <label for="jmeno">Jméno</label>
-                <input type="text" name="jmeno" id="jmeno" maxlength="15" autofocus>
+                <label class="form__label" for="prijmeni">Příjmení</label>
+                <input class="form__input" type="text" name="prijmeni" id="prijmeni" maxlength="15">
 
-                <label for="prijmeni">Příjmení</label>
-                <input type="text" name="prijmeni" id="prijmeni" maxlength="15">
+                <label class="form__label" for="adresa">Adresa</label>
+                <textarea class="form__textarea" name="adresa" id="adresa" rows="5" maxlength="300"></textarea>
 
-                <label for="adresa">Adresa</label>
-                <textarea name="adresa" id="adresa" rows="5" cols="20" maxlength="300"></textarea>
+                <label class="form__label" for="mobil">Mobil</label>
+                <input class="form__input" type="tel" name="mobil" id="mobil" maxlength="">
 
-                <label for="mobil">Mobil</label>
-                <input type="tel" name="mobil" id="mobil" maxlength="">
+                <label class="form__label" for="email">E-mail</label>
+                <input class="form__input" type="email" name="email" id="email" maxlength="">
+            </div>
 
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" maxlength="">
-            </fieldset>
 
-            <fieldset>
-                <legend>Jméno vybrané kočky</legend>
+            <div class="form__form-field">
+                <label class="form__label" for="jmeno-kocky">Jméno kočky</label>
+                <input class="form__input" type="text" name="jmeno-kocky" id="jmeno-kocky" maxlength="15">
+            </div>
 
-                <input type="text" name="jmeno-kocky" id="jmeno-kocky" maxlength="15">
-                <label for="jmeno-kocky">Jméno kočky</label>
-            </fieldset>
 
-            <fieldset>
-                <legend>Typ bydlení</legend>
+            <div class="form__form-field">
+                <p class="form__question">Typ bydlení</p>
 
-                <input type="radio" name="bydleni" id="" value="dum">
-                <label for="">dům</label>
+                <div class="form__radio-check">
+                    <input class="form__input-ridio-check" type="radio" name="bydleni" id="dum" value="dum">
+                    <label class="form__label form__label--radio-check" for="dum">dům</label>
+                </div>
     
-                <input type="radio" name="bydleni" id="" value="byt">
-                <label for="">byt</label>
-            </fieldset>
+                <div class="form__radio-check">
+                    <input type="radio" name="bydleni" id="byt" value="byt">
+                    <label class="form__label form__label--radio-check" for="byt">byt</label>
+                </div>
+            </div>
 
-            <fieldset>
-                <legend>Bydlíte u rušné ulice?</legend>
 
-                <input type="radio" name="rusnost" id="" value="ano">
-                <label for="">ano</label>
+            <div class="form__form-field">
+                <p class="form__question">Bydlíte u rušné ulice?</p>
 
-                <input type="radio" name="rusnost" id="" value="ne">
-                <label for="">ne</label>
+                <div class="form__radio-check">
+                    <input type="radio" name="rusnost" id="ruch-ano" value="ano">
+                    <label class="form__label form__label--radio-check" for="ruch-ano">ano</label>
+                </div>
 
-            </fieldset>
+                <div class="form__radio-check">
+                    <input type="radio" name="rusnost" id="ruch-ne" value="ne">
+                    <label class="form__label form__label--radio-check" for="ruch-ne">ne</label>
+                </div>
 
-            <fieldset>
-                <legend>Bude kočka pouze doma nebo i venku?</legend>
+            </div>
 
-                <input type="radio" name="in-outdoor" id="" value="doma">
-                <label for="">doma</label>
+
+            <div class="form__form-field">
+                <p class="form__question">Bude kočka pouze doma nebo i venku?</p>
+
+                <div class="form__radio-check">
+                    <input type="radio" name="in-outdoor" id="doma" value="doma">
+                    <label class="form__label form__label--radio-check" for="doma">doma</label>
+                </div>
     
-                <input type="radio" name="in-outdoor" id="" value="venku">
-                <label for="">venku</label>
+                <div class="form__radio-check">
+                    <input type="radio" name="in-outdoor" id="venku" value="venku">
+                    <label class="form__label form__label--radio-check" for="venku">venku</label>
+                </div>
 
-            </fieldset>
-
-            <fieldset>
-                <legend></legend>
-
-            </fieldset>
-
-            <fieldset>
-                <legend></legend>
-
-            </fieldset>
-
-            <fieldset>
-                <legend></legend>
-
-            </fieldset>
-            
-
-            <input type="radio" name="zkusenost" id="" value="ještě žádné nemám">
-            <label for="">ještě žádné nemám</label>
-
-            <input type="radio" name="zkusenost" id="" value="měl/a jsem už kočku">
-            <label for="">měl/a jsem už kočku</label>
-
-            <input type="radio" name="zkusenost" id="" value="mám kočku">
-            <label for="">mám kočku</label>
+            </div>
 
 
+            <div class="form__form-field">
+                <p class="form__question">Jaké máte s kočkami zkušenosti?</p>
 
-            <input type="checkbox" name="" id="" value="nebude">
-            <label for="">nebude</label>
+                <div class="form__radio-check">
+                    <input type="radio" name="zkusenost" id="nemam" value="ještě žádné nemám">
+                    <label class="form__label form__label--radio-check" for="nemam">ještě žádné nemám</label>
+                </div>
+    
+                <div class="form__radio-check">
+                    <input type="radio" name="zkusenost" id="mel" value="měl/a jsem už kočku">
+                    <label class="form__label form__label--radio-check" for="mel">měl/a jsem už kočku</label>
+                </div>
+    
+                <div class="form__radio-check">
+                    <input type="radio" name="zkusenost" id="mam" value="mám kočku">
+                    <label class="form__label form__label--radio-check" for="mam">mám kočku</label>
+                </div>
 
-            <input type="checkbox" name="" id="" value="malé dítě">
-            <label for="">malé dítě</label>
-
-            <input type="checkbox" name="" id="" value="pes">
-            <label for="">pes</label>
-
-            <input type="checkbox" name="" id="" value="kočka">
-            <label for="">kočka</label>
-
-            <input type="checkbox" name="" id="" value="jiné zvíře">
-            <label for="">jiné zvíře</label>
-
-            <label for="jine-zvire"></label>
-            <input type="text" name="jine-zvire" id="jine-zvire" maxlength="30">
-
-
-
-            <label for="zabezpeceni">Jak máte zabezpečena okna/balkón?</label>
-            <textarea name="zabezpeceni" id="zabezpeceni" cols="20" rows="5" maxlength="300"></textarea>
+            </div>
 
 
+            <div class="form__form-field">
+                <p class="form__question">Bude mít kočka nějakého parťáka?</p>
 
-            <input type="checkbox" name="" id="" value="granule">
-            <label for="">granule</label>
+                <div class="form__radio-check">
+                    <input type="checkbox" name="nebude" id="nebude" value="nebude">
+                    <label class="form__label form__label--radio-check" for="nebude">nebude</label>
+                </div>
+    
+                <div class="form__radio-check">
+                    <input type="checkbox" name="dite" id="dite" value="malé dítě">
+                    <label class="form__label form__label--radio-check" for="dite">malé dítě</label>
+                </div>
+    
+                <div class="form__radio-check">
+                    <input type="checkbox" name="pes" id="pes" value="pes">
+                    <label class="form__label form__label--radio-check" for="pes">pes</label>
+                </div>
+    
+                <div class="form__radio-check">
+                    <input type="checkbox" name="kocka" id="kocka" value="kočka">
+                    <label class="form__label form__label--radio-check" for="kocka">kočka</label>
+                </div>
+    
+                <div class="form__radio-check">
+                    <input type="checkbox" name="zvire" id="zvire" value="jiné zvíře">
+                    <label class="form__label form__label--radio-check" for="zvire">jiné zvíře</label>
+                </div>
+    
+                <label class="form__label" for="jine-zvire">jiné zvíře</label>
+                <input class="form__input" type="text" name="jine-zvire" id="jine-zvire" maxlength="30">
+            </div>
 
-            <input type="checkbox" name="" id="" value="kapsičky">
-            <label for="">kapsičky</label>
-
-            <input type="checkbox" name="" id="" value="syrové maso">
-            <label for="">syrové maso</label>
-
-            <label for="znacka"></label>
-            <input type="text" name="znacka" id="znacka" maxlength="30">
+            <div class="form__form-field">
+                <label class="form__label" for="zabezpeceni">Jak máte zabezpečena okna/balkón?</label>
+                <textarea class="form__textarea" name="zabezpeceni" id="zabezpeceni" rows="5" maxlength="300"></textarea>
+            </div>
 
 
 
+            <div class="form__form-field">
+                <p class="form__question">Čím budete kočku krmit?</p>
 
-            <input type="radio" name="" id="" value="ano">
-            <label for="">ano</label>
+                <div class="form__radio-check">
+                    <input type="checkbox" name="granule" id="granule" value="granule">
+                    <label class="form__label form__label--radio-check" for="granule">granule</label>
+                </div>
+    
+                <div class="form__radio-check">
+                    <input type="checkbox" name="kapsicky" id="kapsicky" value="kapsičky">
+                    <label class="form__label form__label--radio-check" for="kapsicky">kapsičky</label>
+                </div>
+    
+                <div class="form__radio-check">
+                    <input type="checkbox" name="maso" id="maso" value="syrové maso">
+                    <label class="form__label form__label--radio-check" for="maso">syrové maso</label>
+                </div>
+    
+                <label class="form__label" for="znacka">značka krmiva</label>
+                <input class="form__input" type="text" name="znacka" id="znacka" maxlength="30">
+            </div>
 
-            <input type="radio" name="" id="" value="ne">
-            <label for="">ne</label>
+
+            <div class="form__form-field">
+                <p class="form__question">Souhlasíte s kastrací u zvířat?</p>
+
+                <div class="form__radio-check">
+                    <input type="radio" name="kastrace-ano" id="kastrace-ano" value="ano">
+                    <label class="form__label form__label--radio-check" for="kastrace-ano">ano</label>
+                </div>
+    
+                <div class="form__radio-check">
+                    <input type="radio" name="kastrace-ne" id="kastrace-ne" value="ne">
+                    <label class="form__label form__label--radio-check" for="kastrace-ne">ne</label>
+                </div>
+            </div>
+
+
+            <div class="form__form-field">
+                <p class="form__question">Máte zajištěnou veterinární péči?</p>
+
+                <div class="form__radio-check">
+                    <input type="radio" name="vet-ano" id="vet-ano" value="ano">
+                    <label class="form__label form__label--radio-check" for="vet-ano">ano</label>
+                </div>
+    
+                <div class="form__radio-check">
+                    <input type="radio" name="vet-ne" id="vet-ne" value="ne">
+                    <label class="form__label form__label--radio-check" for="vet-ne">ne</label>
+                </div>
+            </div>
+
+
+            <div class="form__form-field">
+                <label class="form__label" for="sdeleni">Chcete nám o sobě ještě něco sdělit?</label>
+                <textarea class="form__textarea" name="sdeleni" id="sdeleni" rows="5" maxlength="300"></textarea>
+            </div>
 
 
 
-            <input type="radio" name="" id="" value="ano">
-            <label for="">ano</label>
-
-            <input type="radio" name="" id="" value="ne">
-            <label for="">ne</label>
-
-
-
-            <label for="sdeleni">Chcete nám o sobě ještě něco sdělit?</label>
-            <textarea name="sdeleni" id="sdeleni" cols="20" rows="5" maxlength="300"></textarea>
-
-
-
-            <button type="submit" name="tlacitko">Odeslat dotazník</button>
+            <button class="button" type="submit" name="tlacitko">Odeslat dotazník</button>
 
 
         </form>
