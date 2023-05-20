@@ -1,0 +1,26 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+@use '../base/base';
+
+
+.floater {
+    overflow: auto;
+}
+
+.picture {
+    width: 100%;
+
+    &--left {
+        max-width: 350px;
+        float: left;
+        margin: clamp(v.$spacer, 3vw, v.$spacer-double);
+        margin-top: 0;
+    }
+
+    &--right {
+        max-width: 350px;
+        float: right;
+        margin: clamp(v.$spacer, 3vw, v.$spacer-double);
+        margin-top: 0;
+    }
+}

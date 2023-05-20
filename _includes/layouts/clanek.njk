@@ -1,0 +1,39 @@
+---
+layout: layouts/vedlejsi-strana.njk
+title: Článek
+---
+
+
+
+<!--Header-image-->
+
+<figcaption class="pages__img-wrapp"><img class="pages__img" src="/images/dlouhodoba-podpora-header.jpg" alt="kocky-adopce"></figcaption>
+
+
+<main class="wrapper">
+
+
+    <!--Hlavní nadpis stránky-->
+
+    <div class="wrapper__cats">
+        <h2 class="cats__title">Blog</h2>
+    </div>
+
+
+
+    <!--Článek-->  
+
+
+    <section class="text">
+        <div class="floater">
+            <h3 class="text__title">{{ title }}</h3>
+            <p class="text__paragraph">Publikováno {{ date.page }}</p>
+            
+    
+            {{ content | safe }}
+    
+    
+        </div>
+    </section>
+
+</main>

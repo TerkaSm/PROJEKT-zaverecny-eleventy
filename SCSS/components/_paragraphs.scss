@@ -52,13 +52,13 @@
     &__list {
         color: v.$color-secondary-400;
         font-weight: 700;
-        line-height: 1.3;
+        line-height: 1.5;
         margin: clamp(v.$spacer, 3vw, v.$spacer-double);
-        padding-left: v.$spacer-double;
+        margin-left: v.$spacer-double;
     }
 
     &__list li {
-        padding-left: v.$spacer-double;
+        padding-left: v.$spacer;
     }
 
     &__wrapp-img {

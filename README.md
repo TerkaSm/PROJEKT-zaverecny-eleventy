@@ -1,6 +1,6 @@
 # PROJEKT-zaverecny-eleventy
 
-Závěrečný projekt pro kurz Staň se kodérkou
+## Závěrečný projekt pro kurz Staň se kodérkou
 
 Požadavky na závěrečný projekt
 
