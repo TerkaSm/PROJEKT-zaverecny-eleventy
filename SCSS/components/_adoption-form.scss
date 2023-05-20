@@ -21,6 +21,7 @@
 
     &__radio-check {
         padding-left: v.$spacer;
+
     }
 
     &__label {
@@ -33,7 +34,8 @@
 
         &--radio-check {
             display: inline-block;
-            margin-top: 3px;
+            margin: 3px;
+            margin-top: 0;
         }
     }
 
@@ -44,12 +46,6 @@
         height: 2.5rem;
         border: 2px solid v.$color-secondary-400;
 
-    }
-
-    &__input-radio-check {
-        display: inline-block;
-        height: 1.2rem;
-        padding-left: v.$spacer-double;
     }
 
     &__textarea {
