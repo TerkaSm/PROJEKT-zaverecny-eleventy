@@ -26,8 +26,10 @@
             font-size: 1.125rem;
             text-align: center;
             flex: 1;
+            text-decoration: none;
 
             &:hover {
+                color: v.$color-secondary-400;
                 transform: scale(1.1);
                 border: 2px solid v.$color-secondary-400;
             }

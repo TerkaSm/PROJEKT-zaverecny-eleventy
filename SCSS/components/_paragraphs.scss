@@ -9,6 +9,7 @@
     box-shadow: v.$shadow;
     padding: clamp(v.$spacer-half, 5vw, v.$spacer-medium);
     margin-bottom: clamp(v.$spacer, 6vw, v.$spacer-medium);
+    overflow: auto;
 
     p:first-child {
         margin-top: 0;
@@ -23,7 +24,7 @@
     }
 
     &__title {
-        margin: clamp(20px, 3vw, 40px);
+        margin: clamp(v.$spacer, 3vw, v.$spacer-double);
     }
 
     &__paragraph {
@@ -54,7 +55,7 @@
         font-weight: 700;
         line-height: 1.5;
         margin: clamp(v.$spacer, 3vw, v.$spacer-double);
-        margin-left: v.$spacer-double;
+        padding-left: v.$spacer-double;
     }
 
     &__list li {

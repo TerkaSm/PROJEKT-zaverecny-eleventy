@@ -50,9 +50,11 @@
         color: v.$color-background-sections;
         display: block;
         padding: v.$spacer-half v.$spacer;
+        text-decoration: none;
 
         &:hover {
             transform: scale(1.1);
+            color: v.$color-background-sections;
         }
     }
 }
@@ -65,9 +67,11 @@
         color: v.$color-background-sections;
         display: block;
         padding: v.$spacer-half v.$spacer;
+        text-decoration: none;
 
         &:hover {
             transform: scale(1.1);
+            color: v.$color-background-sections;
         }
     }
 }
@@ -92,9 +96,11 @@
     &__link {
         color: v.$color-background-sections;
         display: block;
+        text-decoration: none;
 
         &:hover {
             transform: scale(1.1);
+            color: v.$color-background-sections;
         }
 
         &--icon {

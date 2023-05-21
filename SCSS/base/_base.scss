@@ -36,7 +36,7 @@ body {
    background-color: v.$color-background-body;
 }
 
-h1, h3, h4, h5 {
+h1 {
     font-weight: 700;
 }
 
@@ -52,16 +52,31 @@ h3 {
     font-weight: 500;
 }
 
+p {
+    color: v.$color-secondary-400;
+        font-weight: bold;
+        line-height: 1.5;
+}
+
 
 a {
     color: v.$color-secondary-400;
     font-weight: 700;
-    text-decoration: none;
+
+    &:hover {
+        color: v.$color-primary-400;
+    }
 }
 
-.wrapper {
-    margin: 0 auto;
-    max-width: 1080px;
-    padding: clamp(v.$spacer-half, 3vw, v.$spacer);
-    padding-top: 0;
+ul {
+    color: v.$color-secondary-400;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: clamp(v.$spacer, 3vw, v.$spacer-double);
+        padding-left: v.$spacer-double;
 }
+
+li {
+    padding-left: v.$spacer;
+}
+

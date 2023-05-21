@@ -21,7 +21,7 @@ body {
   background-color: #E8E1D1;
 }
 
-h1, h3, h4, h5 {
+h1 {
   font-weight: 700;
 }
 
@@ -37,17 +37,30 @@ h3 {
   font-weight: 500;
 }
 
+p {
+  color: #4A3A2B;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
 a {
   color: #4A3A2B;
   font-weight: 700;
-  text-decoration: none;
+}
+a:hover {
+  color: #C53607;
 }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1080px;
-  padding: clamp(10px, 3vw, 20px);
-  padding-top: 0;
+ul {
+  color: #4A3A2B;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: clamp(20px, 3vw, 40px);
+  padding-left: 40px;
+}
+
+li {
+  padding-left: 20px;
 }
 
 .border {
@@ -180,8 +193,10 @@ a {
     font-size: 1.125rem;
     text-align: center;
     flex: 1;
+    text-decoration: none;
   }
   .menu-large__item:hover {
+    color: #4A3A2B;
     transform: scale(1.1);
     border: 2px solid #4A3A2B;
   }
@@ -401,9 +416,11 @@ a {
   color: #EDE9E0;
   display: block;
   padding: 10px 20px;
+  text-decoration: none;
 }
 .menu-footer__item:hover {
   transform: scale(1.1);
+  color: #EDE9E0;
 }
 
 .list-links {
@@ -414,9 +431,11 @@ a {
   color: #EDE9E0;
   display: block;
   padding: 10px 20px;
+  text-decoration: none;
 }
 .list-links__link:hover {
   transform: scale(1.1);
+  color: #EDE9E0;
 }
 
 .contacts {
@@ -440,9 +459,11 @@ a {
 .contacts__link {
   color: #EDE9E0;
   display: block;
+  text-decoration: none;
 }
 .contacts__link:hover {
   transform: scale(1.1);
+  color: #EDE9E0;
 }
 .contacts__link--icon {
   width: 36px;
@@ -473,6 +494,7 @@ a {
   border: 2px solid #4A3A2B;
   padding: 10px 20px;
   min-width: 133px;
+  text-decoration: none;
 }
 .button:hover, .button:active {
   color: #EDE9E0;
@@ -641,6 +663,7 @@ a {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: clamp(10px, 5vw, 60px);
   margin-bottom: clamp(20px, 6vw, 60px);
+  overflow: auto;
 }
 .text p:first-child {
   margin-top: 0;
@@ -677,7 +700,7 @@ a {
   font-weight: 700;
   line-height: 1.5;
   margin: clamp(20px, 3vw, 40px);
-  margin-left: 40px;
+  padding-left: 40px;
 }
 .text__list li {
   padding-left: 20px;
@@ -881,10 +904,6 @@ a {
 
 iframe {
   padding: clamp(20px, 3vw, 20px);
-}
-
-.floater {
-  overflow: auto;
 }
 
 .picture {
