@@ -19,7 +19,7 @@
 
         @include mx.media-min(900px) {
             display: inline-block;
-            padding: v.$spacer-half v.$spacer;
+            padding: v.$spacer-half 15px;
             color: v.$color-secondary-400;
             background-color: v.$color-background-sections;
             border: 2px solid v.$color-background-sections;

@@ -32,6 +32,7 @@
     &__item {
         font-size: 14px;
         color: v.$color-background-sections;
+        text-decoration: none;
 
         @include mx.media-min(900px) {
             display: none;

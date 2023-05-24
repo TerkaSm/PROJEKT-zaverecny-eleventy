@@ -27,7 +27,9 @@ title: Článek
     <section class="text">
 
         <h2 class="text__title">{{ title }}</h2>
-        <p class="text__paragraph">Publikováno {{ page.date }}</p>
+        <p class="text__paragraph">Publikováno {{ page.date.toLocaleString('cs-CZ')  }}</p>
+        <p class="text__paragraph">{{ perex }}</p>
+        <img class="picture picture--right" src="/images/{{ foto }}" alt="{{ alt }}">
             
     
             {{ content | safe }}

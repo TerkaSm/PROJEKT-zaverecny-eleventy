@@ -9,6 +9,7 @@ title: Blog
 
 <figcaption class="pages__img-wrapp"><img class="pages__img" src="/images/dlouhodoba-podpora-header.jpg" alt="kocky-adopce"></figcaption>
 
+
 <main class="wrapper">
 
 
@@ -18,14 +19,21 @@ title: Blog
         <h2 class="cats__title">Blog</h2>
     </div>
 
+{% for prispevek in collections.blog %}
+
+    <!--Článek-->
 
 
-
-    <!--Dlouhodobá podpora odstavce textu-->
-
-    <section class="text">
-        
+    <section class="text blog">
+        <figcaption class="text__wrapp-img"><img class="blog__img" src="/images/{{ prispevek.data.foto }}" alt="kočka útulek"></figcaption>
+        <div class="blog__content">
+            <h2 class="text__title">{{ prispevek.data.title }}</h2>
+            <p class="text__paragraph">{{ prispevek.data.perex }} </p>
+            <div class="wrapp-butt"><a class="button button--primary" href="{{ prispevek.url }}">celý článek</a></div>
+        </div>
     </section>
 
+
+    {% endfor %}
 
 </main>
