@@ -24,6 +24,7 @@
 
     &__title {
         display: inline-block;
+        backface-visibility: hidden;
     
 
         &--dont {
@@ -32,6 +33,9 @@
 
             font-weight: 400;
             color: v.$color-primary-400;
+            display: inline-block;
+
+            animation: moveInLeft 1s ease-out;
         }
 
         &--adopt {
@@ -41,14 +45,24 @@
             color: v.$color-secondary-400;
             line-height: 1;
             border-bottom: 2px solid v.$color-secondary-400;
+            display: inline-block;
+            padding-bottom: 10px;
+
+            animation: moveInRight 1s ease-out;
         }
+
+       
+
     }
 
     &__sentence {
         font-size: 14px;
         font-weight: 700;
         color: v.$color-secondary-400;
-        padding: v.$spacer 0;
+        padding: v.$spacer-half 0 v.$spacer 0;
+
+        animation: moveInLeftLater 1.2s ease-out;
+        animation-delay: .5s;
     }
 
     &__img {
@@ -64,5 +78,75 @@
         @include mx.media-min(900px) {
             bottom: 0;
         }
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInLeftLater {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn-animated {
+    animation: moveInBottom 1s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
     }
 }
