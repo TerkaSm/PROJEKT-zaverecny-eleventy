@@ -5,14 +5,21 @@
 .cat-card {
     background-color: v.$color-background-sections;
     box-shadow: v.$shadow;
-    margin-top: clamp(v.$spacer-half, 5vw, v.$spacer);
+    margin-top: clamp(v.$spacer-half, 5vw, v.$spacer);  
+    position: relative;
 
     &__wrapper {
-        width: 100%;
+        width: 333%;
+        height: 227px;
     }
 
     &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 100%;
+        height: 50%;
+        object-fit: cover;
     }
 
     &__content {

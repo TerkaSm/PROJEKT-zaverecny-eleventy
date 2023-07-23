@@ -637,12 +637,20 @@ li {
   background-color: #EDE9E0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-top: clamp(0.625rem, 5vw, 1.25rem);
+  position: relative;
 }
 .cat-card__wrapper {
-  width: 100%;
+  width: 333%;
+  height: 227px;
 }
 .cat-card__img {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .cat-card__content {
   padding: 1.25rem;

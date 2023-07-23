@@ -7,6 +7,8 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("icons");
 
+    eleventyConfig.addPassthroughCopy("kocky");
+
     return {
         // možné formáty šablon
         templateFormats: ["njk", "html", "md"],
