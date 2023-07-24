@@ -96,13 +96,21 @@
 //  Main
 
 .pages-main__grid {
-    @include mx.media-min(600px) {
+    @include mx.media-min(550px) {
         @include mx.grid(2);
         gap: v.$spacer;
     }
 
-    @include mx.media-min(900px) {
+    @include mx.media-min(800px) {
         @include mx.grid(3);
+    }
+
+    @include mx.media-min(1080px) {
+        @include mx.grid(4);
+    }
+
+    @include mx.media-min(1350px) {
+        @include mx.grid(5);
     }
 }
 

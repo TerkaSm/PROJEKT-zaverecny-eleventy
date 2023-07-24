@@ -1,0 +1,108 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as mx;
+
+
+.filters {
+    margin-top: 4rem;
+    text-align: start;
+}
+
+.filter-style {
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    background-color: v.$color-background-body;
+    padding: .5rem v.$spacer;
+    border: 2px solid white;
+    margin: 5px 2px;
+    cursor: pointer;
+
+    &--1 {
+        color: #5EB9EF;
+        border: 2px solid #5EB9EF;
+
+        &:hover,
+        &:active {
+            color: v.$color-background-sections;
+            background-color: #5EB9EF;
+        }
+    }
+
+    &--2 {
+        color: #F0531E;
+        border: 2px solid #F0531E;
+
+        &:hover,
+        &:active {
+            color: v.$color-background-sections;
+            background-color: #F0531E;
+        }
+    }
+
+    &--3 {
+        color: #da4ea2;
+        border: 2px solid #da4ea2;
+
+        &:hover,
+        &:active {
+            color: v.$color-background-sections;
+            background-color: #da4ea2;
+        }
+    }
+
+    &--4 {
+        color: #fff;
+        border: 2px solid #fff;
+        text-shadow: 1px 1px 8px rgba(0, 0, 0, .2);
+
+        &:hover,
+        &:active {
+            color: v.$color-background-sections;
+            background-color: #fff;
+        }
+    }
+
+    &--5 {
+        color: #888;
+        border: 2px solid #888;
+
+        &:hover,
+        &:active {
+            color: v.$color-background-sections;
+            background-color: #888;
+        }
+    }
+
+    &--6 {
+        color: #111;
+        border: 2px solid #111;
+
+        &:hover,
+        &:active {
+            color: v.$color-background-sections;
+            background-color: #111;
+        }
+    }
+
+    &--7 {
+        color: #61412c;
+        border: 2px solid #61412c;
+
+        &:hover,
+        &:active {
+            color: v.$color-background-sections;
+            background-color: #61412c;
+        }
+    }
+
+    &--8 {
+        color: #ca7b26;
+        border: 2px solid #ca7b26;
+
+        &:hover,
+        &:active {
+            color: v.$color-background-sections;
+            background-color: #ca7b26;
+        }
+    }
+}

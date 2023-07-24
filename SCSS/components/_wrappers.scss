@@ -10,6 +10,12 @@
     max-width: 1080px;
     padding: clamp(v.$spacer-half, 3vw, v.$spacer);
     padding-top: 0;
+
+    &--big {
+        max-width: 1650px;
+        margin: 0 auto;
+        padding: clamp(v.$spacer-half, 3vw, v.$spacer);
+    }
 }
 
 // wrapper centrovač tlačítek
