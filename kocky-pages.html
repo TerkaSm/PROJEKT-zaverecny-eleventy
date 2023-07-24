@@ -1,0 +1,69 @@
+---
+pagination:
+  data: kocky
+  size: 1
+  alias: kocka
+permalink: "adoptuj/{{ kocka.jmeno | slug }}/"
+layout: layouts/vedlejsi-strana.njk
+---
+
+
+
+<!--Header-image
+
+<figcaption class="pages__img-wrapp"><img class="pages__img" src="/images/adoptuj-kocka-header.jpg" alt="kocky-adopce"></figcaption>
+-->
+<main class="wrapper">
+
+
+    <!--Hlavní nadpis stránky-->
+
+    <div class="wrapper__cats">
+        <h2 class="cats__title">Pojďme se podívat zblízka na:</h2>
+    </div>
+
+
+
+    <!--Detail kočky-->
+    
+
+    <section class="text">
+        <div class="page-cat">
+            <figcaption class="page-cat__wrapp-img"><img class="page-cat__img" src="/kocky/{{ kocka.foto }}" alt="kočka k adopci"></figcaption>
+            <div class="page-cat__content">
+                <h3 class="page-cat__title">{{ kocka.jmeno }}</h3>
+                <div class="page-cat__checkbox-grids">
+                    <div class="page-cat__checkbox-grid">
+                        <img src="/icons/{{ kocka.deti }}.svg" alt="{{ kocka.deti }}"><p>hodí se k dětem</p>
+                        <img src="/icons/{{ kocka.pes }}.svg" alt="{{ kocka.pes }}"><p>psí kamarád</p>
+                        <img src="/icons/{{ kocka.byt }}.svg" alt="{{ kocka.byt }}"><p>do bytu</p>
+                        <img src="/icons/{{ kocka.jinakocka }}.svg" alt="{{ kocka.jinakocka }}"><p>k jiným kočkám</p>
+                        <img src="/icons/{{ kocka.zacatecnik }}.svg" alt="{{ kocka.zacatecnik }}"><p>pro začátečníky</p>
+                        <img src="/icons/{{ kocka.kontaktni }}.svg" alt="{{ kocka.kontaktni }}"><p>kontaktní</p>
+                        <img src="/icons/{{ kocka.zahrada }}.svg" alt="{{ kocka.zahrada }}"><p>na zahradu</p>
+                    </div>
+                    <div class="page-cat__checkbox-grid">
+                        <img src="/icons/{{ kocka.ockovani }}.svg" alt="{{ kocka.ockovani }}"><p>očkování</p>
+                        <img src="/icons/{{ kocka.kastrace }}.svg" alt="{{ kocka.kastrace }}"><p>kastrace</p>
+                        <img src="/icons/{{ kocka.handicap }}.svg" alt="{{ kocka.handicap }}"><p>handicap</p>
+                        <img class="hidden" src="/icons/ano.svg" alt="ano"><p class="hidden">x</p>
+                        <img class="hidden" src="/icons/ano.svg" alt="ano"><p class="hidden">x</p>
+                        <img class="hidden" src="/icons/ano.svg" alt="ano"><p class="hidden">x</p>
+                        <img class="hidden" src="/icons/ano.svg" alt="ne"><p class="hidden">x</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text__paragraph">VĚK: {{ kocka.vek }}</p>
+        <p class="text__paragraph">POHLAVÍ: {{ kocka.pohlavi }}</p>
+        <p class="text__paragraph">PLEMENO: {{ kocka.plemeno }}</p>
+        <p class="text__paragraph">{{ kocka.popis }}</p>
+        <p class="text__paragraph">adopční poplatek: 1000 kč</p>
+        <div class="wrapp-butt wrapp-butt--space-up">
+            <a class="button button--primary" href="/adoptuj/adopcni-dotaznik/">Zamluvit kočku</a>
+            <a class="button button--primary space-up" href="/adoptuj/virtualni-adopce-dotaznik/">Virtuálně adoptovat</a>
+        </div>
+        <div class="wrapp-butt wrapp-butt--space-up"><a class="button button--primary" href="/adoptuj/">Další kočky k adopci</a></div>
+    </section>
+
+</main>

@@ -155,18 +155,18 @@ title: Adoptuj
                     </div>
                 </article>
 
-                {% for karta in collections.adoptuj %}
-
                 <!--Karta kočky-->
+
+                {% for kocka in kocky %}
 
 
                 <article class="cat-card">
-                    <figcaption class="cat-card__wrapper"><a href="{{ karta.url }}" class="cat-card__link"><img class="cat-card__img" src="/kocky/{{ karta.data.foto }}" alt="kočka k adopci"></a></figcaption>
+                    <figcaption class="cat-card__wrapper"><a href="/adoptuj/{{ kocka.jmeno | slug }}/" class="cat-card__link"><img class="cat-card__img" src="/kocky/{{ kocka.foto }}" alt="kočka k adopci"></a></figcaption>
                     <div class="cat-card__content">
-                        <h3 class="cat-card__title">{{ karta.data.title }}</h3>
-                        <p class="cat-card__text">{{ karta.data.vek }}</p>
-                        <p class="cat-card__text cat-card__text--second">{{ karta.data.pohlavi }}</p>
-                        <a class="button button--primary" href="{{ karta.url }}">Zjistit více</a>
+                        <h3 class="cat-card__title">{{ kocka.jmeno }}</h3>
+                        <p class="cat-card__text">{{ kocka.vek }}</p>
+                        <p class="cat-card__text cat-card__text--second">{{ kocka.pohlavi }}</p>
+                        <a class="button button--primary" href="/adoptuj/{{ kocka.jmeno | slug }}/">Zjistit více</a>
                     </div>
                 </article>
 

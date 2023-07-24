@@ -7,10 +7,11 @@
     box-shadow: v.$shadow;
     margin-top: clamp(v.$spacer-half, 5vw, v.$spacer);  
     position: relative;
+    flex: 1;
 
     &__wrapper {
-        width: 333%;
-        height: 227px;
+        width: 33.3333333%;
+        height: 400px;
     }
 
     &__img {
@@ -18,7 +19,7 @@
         left: 0;
         top: 0;
         width: 100%;
-        height: 50%;
+        height: 400px;
         object-fit: cover;
     }
 
