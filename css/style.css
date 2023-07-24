@@ -427,6 +427,8 @@ li {
 }
 .cats__title {
   font-weight: 500;
+  margin-top: clamp(0.625rem, 5vw, 2.5rem);
+  margin-bottom: clamp(3px, 3vw, 1.25rem);
 }
 
 .footer-background {
@@ -687,6 +689,7 @@ li {
   background-color: #E8E1D1;
   padding: 0.5rem 1.25rem;
   border: 2px solid white;
+  border-radius: 30px;
   margin: 5px 2px;
   cursor: pointer;
 }
@@ -720,7 +723,7 @@ li {
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
 .filter-style--4:hover, .filter-style--4:active {
-  color: #EDE9E0;
+  color: #555;
   background-color: #fff;
 }
 .filter-style--5 {

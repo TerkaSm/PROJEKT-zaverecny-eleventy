@@ -14,6 +14,7 @@
     background-color: v.$color-background-body;
     padding: .5rem v.$spacer;
     border: 2px solid white;
+    border-radius: 30px;
     margin: 5px 2px;
     cursor: pointer;
 
@@ -57,7 +58,7 @@
 
         &:hover,
         &:active {
-            color: v.$color-background-sections;
+            color: #555;
             background-color: #fff;
         }
     }

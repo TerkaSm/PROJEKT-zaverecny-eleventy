@@ -52,43 +52,62 @@ title: Azyl Jiřina Skoumalová
     </section>
 
 
-    <!--Cats-->
+    <!--Cats
 
     <div class="wrapper__cats">
         <h2 class="cats__title">Kdo na Tebe čeká?</h2>
         <section class="cats">
-            <article class="cat-card">
-                <figcaption class="cat-card__wrapper"><a href="/adoptuj/" class="cat-card__link"><img class="cat-card__img" src="/images/foto-sekce-materialni-pomoc.jpg" alt="kocka-utulek"></a></figcaption>
+
+            {% for kocka in kocky %}
+
+            {% if loop.index <= 3 %}
+
+            <article class="cat-card" data-tag="{{ kocka.tagy }}">
+                <figcaption class="cat-card__wrapper"><a href="/adoptuj/{{ kocka.jmeno | slug }}/" class="cat-card__link"><img class="cat-card__img" src="/kocky/{{ kocka.foto }}" alt="kočka k adopci"></a></figcaption>
                 <div class="cat-card__content">
-                    <h3 class="cat-card__title">Pampeliška</h3>
-                    <p class="cat-card__text">narozena: 2020</p>
-                    <p class="cat-card__text cat-card__text--second">příjem: 2021</p>
-                    <a class="button button--primary" href="/adoptuj/">Zjistit více</a>
+                    <h3 class="cat-card__title">{{ kocka.jmeno }}</h3>
+                    <p class="cat-card__text">{{ kocka.vek }}</p>
+                    <p class="cat-card__text cat-card__text--second">{{ kocka.pohlavi }}</p>
+                    <a class="button button--primary" href="/adoptuj/{{ kocka.jmeno | slug }}/">Zjistit více</a>
                 </div>
             </article>
 
-            <article class="cat-card">
-                <figcaption class="cat-card__wrapper"><a href="/adoptuj/" class="cat-card__link"><img class="cat-card__img" src="/images/cat-two.jpg" alt="kocka-utulek"></a></figcaption>
-                <div class="cat-card__content">
-                    <h3 class="cat-card__title">Mikeš</h3>
-                    <p class="cat-card__text">narozen: 2015</p>
-                    <p class="cat-card__text cat-card__text--second">příjem: 2019</p>
-                    <a class="button button--primary" href="/adoptuj/">Zjistit více</a>
-                </div>
-            </article>
+            {% endif %}
 
-            <article class="cat-card">
-                <figcaption class="cat-card__wrapper"><a href="/adoptuj/" class="cat-card__link"><img class="cat-card__img" src="/images/cat-three.jpg" alt="kocka-utulek"></a></figcaption>
-                <div class="cat-card__content">
-                    <h3 class="cat-card__title">Babetka</h3>
-                    <p class="cat-card__text">narozena: 2022</p>
-                    <p class="cat-card__text cat-card__text--second">příjem: 2022</p>
-                    <a class="button button--primary" href="/adoptuj/">Zjistit více</a>
-                </div>
-            </article>
+            {% endfor %}
+
         </section>
         <div class="wrapp-butt wrapp-butt--space-up"><a class="button" href="/adoptuj/">Všechny kočky k adopci</a></div>
     </div>
+
+    -->
+
+        <!--Cats-->
+
+        <div class="wrapper__cats">
+            <h2 class="cats__title">Kdo na Tebe čeká?</h2>
+            <section class="cats">
+    
+                {% set homekocky = [ kocky | random, kocky | random, kocky | random ] %}
+    
+                {% for kocka in homekocky %}
+    
+                <article class="cat-card" data-tag="{{ kocka.tagy }}">
+                    <figcaption class="cat-card__wrapper"><a href="/adoptuj/{{ kocka.jmeno | slug }}/" class="cat-card__link"><img class="cat-card__img" src="/kocky/{{ kocka.foto }}" alt="kočka k adopci"></a></figcaption>
+                    <div class="cat-card__content">
+                        <h3 class="cat-card__title">{{ kocka.jmeno }}</h3>
+                        <p class="cat-card__text">{{ kocka.vek }}</p>
+                        <p class="cat-card__text cat-card__text--second">{{ kocka.pohlavi }}</p>
+                        <a class="button button--primary" href="/adoptuj/{{ kocka.jmeno | slug }}/">Zjistit více</a>
+                    </div>
+                </article>
+    
+    
+                {% endfor %}
+    
+            </section>
+            <div class="wrapp-butt wrapp-butt--space-up"><a class="button" href="/adoptuj/">Všechny kočky k adopci</a></div>
+        </div>
 
     <!--Virtual-adoption-->
 
