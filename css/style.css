@@ -694,28 +694,28 @@ li {
   cursor: pointer;
 }
 .filter-style--1 {
-  color: #5EB9EF;
-  border: 2px solid #5EB9EF;
+  color: #4091c0;
+  border: 2px solid #4091c0;
 }
 .filter-style--1:hover, .filter-style--1:active {
   color: #EDE9E0;
-  background-color: #5EB9EF;
+  background-color: #4091c0;
 }
 .filter-style--2 {
-  color: #F0531E;
-  border: 2px solid #F0531E;
+  color: #b83104;
+  border: 2px solid #b83104;
 }
 .filter-style--2:hover, .filter-style--2:active {
   color: #EDE9E0;
-  background-color: #F0531E;
+  background-color: #b83104;
 }
 .filter-style--3 {
-  color: #da4ea2;
-  border: 2px solid #da4ea2;
+  color: #cc63a2;
+  border: 2px solid #cc63a2;
 }
 .filter-style--3:hover, .filter-style--3:active {
   color: #EDE9E0;
-  background-color: #da4ea2;
+  background-color: #cc63a2;
 }
 .filter-style--4 {
   color: #fff;
@@ -743,20 +743,28 @@ li {
   background-color: #111;
 }
 .filter-style--7 {
-  color: #61412c;
-  border: 2px solid #61412c;
+  color: #864e29;
+  border: 2px solid #864e29;
 }
 .filter-style--7:hover, .filter-style--7:active {
   color: #EDE9E0;
-  background-color: #61412c;
+  background-color: #864e29;
 }
 .filter-style--8 {
-  color: #ca7b26;
-  border: 2px solid #ca7b26;
+  color: #d5561a;
+  border: 2px solid #d5561a;
 }
 .filter-style--8:hover, .filter-style--8:active {
   color: #EDE9E0;
-  background-color: #ca7b26;
+  background-color: #d5561a;
+}
+.filter-style--9 {
+  color: #1f8f46;
+  border: 2px solid #1f8f46;
+}
+.filter-style--9:hover, .filter-style--9:active {
+  color: #EDE9E0;
+  background-color: #1f8f46;
 }
 
 .basic-section {
