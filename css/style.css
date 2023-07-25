@@ -578,6 +578,9 @@ li {
   background-color: #C53607;
   border: 2px solid #C53607;
 }
+.button--little {
+  font-size: 1rem;
+}
 
 .wrapper {
   margin: 0 auto;
@@ -856,6 +859,12 @@ li {
 }
 .text__paragraph--comparison {
   font-size: 20px;
+}
+.text__paragraph--little-margin {
+  margin: 20px;
+}
+.text__span {
+  color: #C53607;
 }
 .text__link {
   text-decoration: underline;

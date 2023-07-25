@@ -36,6 +36,14 @@
         &--comparison {
             font-size: 20px;
         }
+
+        &--little-margin {
+            margin: 20px;
+        }
+    }
+
+    &__span {
+        color: v.$color-primary-400;
     }
 
     &__link {

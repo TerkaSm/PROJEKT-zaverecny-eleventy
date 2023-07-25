@@ -31,7 +31,7 @@ layout: layouts/vedlejsi-strana.njk
         <div class="page-cat">
             <figcaption class="page-cat__wrapp-img"><img class="page-cat__img" src="/kocky/{{ kocka.foto }}" alt="kočka k adopci"></figcaption>
             <div class="page-cat__content">
-                <h3 class="page-cat__title">{{ kocka.jmeno }}</h3>
+                <h2 class="page-cat__title">{{ kocka.jmeno }}</h2>
                 <div class="page-cat__checkbox-grids">
                     <div class="page-cat__checkbox-grid">
                         <img src="/icons/{{ kocka.deti }}.svg" alt="{{ kocka.deti }}"><p>hodí se k dětem</p>
@@ -54,17 +54,17 @@ layout: layouts/vedlejsi-strana.njk
                 </div>
             </div>
         </div>
-        <p class="text__paragraph">VĚK: {{ kocka.vek }}</p>
-        <p class="text__paragraph">POHLAVÍ: {{ kocka.pohlavi }}</p>
-        <p class="text__paragraph">PLEMENO: {{ kocka.plemeno }}</p>
-        <p class="text__paragraph">BARVA: {{ kocka.barva }}</p>
-        <p class="text__paragraph">POPIS: {{ kocka.popis }}</p>
-        <p class="text__paragraph">adopční poplatek: 1000 kč</p>
+        <p class="text__paragraph text__paragraph--little-margin"><span class="text__span">Věk:</span> {{ kocka.vek }}</p>
+        <p class="text__paragraph text__paragraph--little-margin"><span class="text__span">Pohlaví:</span> {{ kocka.pohlavi }}</p>
+        <p class="text__paragraph text__paragraph--little-margin"><span class="text__span">Plemeno:</span> {{ kocka.plemeno }}</p>
+        <p class="text__paragraph text__paragraph--little-margin"><span class="text__span">Barva:</span> {{ kocka.barva }}</p>
+        <p class="text__paragraph text__paragraph--little-margin"><span class="text__span">Popis:</span> {{ kocka.popis }}</p>
+        <p class="text__paragraph text__paragraph--little-margin"><span class="text__span">Adopční poplatek:</span> 1000 kč</p>
         <div class="wrapp-butt wrapp-butt--space-up">
             <a class="button button--primary" href="/adoptuj/adopcni-dotaznik/">Zamluvit kočku</a>
             <a class="button button--primary space-up" href="/adoptuj/virtualni-adopce-dotaznik/">Virtuálně adoptovat</a>
         </div>
-        <div class="wrapp-butt wrapp-butt--space-up"><a class="button button--primary" href="/adoptuj/">Další kočky k adopci</a></div>
+        <div class="wrapp-butt wrapp-butt--space-up"><a class="button button--little" href="/adoptuj/">Další kočky k adopci</a></div>
     </section>
 
 </main>
