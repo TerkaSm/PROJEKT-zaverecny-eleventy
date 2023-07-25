@@ -14,39 +14,40 @@
     background-color: v.$color-background-body;
     padding: .5rem v.$spacer;
     border: 2px solid white;
+    border-radius: 30px;
     margin: 5px 2px;
     cursor: pointer;
 
     &--1 {
-        color: #5EB9EF;
-        border: 2px solid #5EB9EF;
+        color: #4091c0;
+        border: 2px solid #4091c0;
 
         &:hover,
         &:active {
             color: v.$color-background-sections;
-            background-color: #5EB9EF;
+            background-color: #4091c0;
         }
     }
 
     &--2 {
-        color: #F0531E;
-        border: 2px solid #F0531E;
+        color: #b83104;
+        border: 2px solid #b83104;
 
         &:hover,
         &:active {
             color: v.$color-background-sections;
-            background-color: #F0531E;
+            background-color: #b83104;
         }
     }
 
     &--3 {
-        color: #da4ea2;
-        border: 2px solid #da4ea2;
+        color: #cc63a2;
+        border: 2px solid #cc63a2;
 
         &:hover,
         &:active {
             color: v.$color-background-sections;
-            background-color: #da4ea2;
+            background-color: #cc63a2;
         }
     }
 
@@ -57,7 +58,7 @@
 
         &:hover,
         &:active {
-            color: v.$color-background-sections;
+            color: #555;
             background-color: #fff;
         }
     }
@@ -85,24 +86,35 @@
     }
 
     &--7 {
-        color: #61412c;
-        border: 2px solid #61412c;
+        color: #864e29;
+        border: 2px solid #864e29;
 
         &:hover,
         &:active {
             color: v.$color-background-sections;
-            background-color: #61412c;
+            background-color: #864e29;
         }
     }
 
     &--8 {
-        color: #ca7b26;
-        border: 2px solid #ca7b26;
+        color: #d5561a;
+        border: 2px solid #d5561a;
 
         &:hover,
         &:active {
             color: v.$color-background-sections;
-            background-color: #ca7b26;
+            background-color: #d5561a;
+        }
+    }
+
+    &--9 {
+        color: #1f8f46;
+        border: 2px solid #1f8f46;
+
+        &:hover,
+        &:active {
+            color: v.$color-background-sections;
+            background-color: #1f8f46;
         }
     }
 }

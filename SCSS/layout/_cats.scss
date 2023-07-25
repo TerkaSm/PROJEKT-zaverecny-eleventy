@@ -20,5 +20,7 @@
 
     &__title {
         font-weight: 500;
+        margin-top: clamp(v.$spacer-half, 5vw, v.$spacer-double);
+        margin-bottom: clamp(3px, 3vw, v.$spacer);
     }
 }
