@@ -545,8 +545,16 @@ li {
 
 .copy {
   background-color: #E8E1D1;
+  display: flex;
+  justify-content: space-between;
 }
 .copy__text {
+  color: #4A3A2B;
+  text-align: center;
+  font-weight: 700;
+  padding: 1.25rem;
+}
+.copy__link {
   color: #4A3A2B;
   text-align: center;
   font-weight: 700;
