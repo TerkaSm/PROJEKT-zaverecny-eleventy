@@ -5,8 +5,17 @@
 
 .copy {
     background-color: v.$color-background-body;
+    display: flex;
+    justify-content: space-between;
 
     &__text {
+        color: v.$color-secondary-400;
+        text-align: center;
+        font-weight: 700;
+        padding: v.$spacer;
+    }
+
+    &__link {
         color: v.$color-secondary-400;
         text-align: center;
         font-weight: 700;
