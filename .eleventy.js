@@ -9,6 +9,12 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("kocky");
 
+    // Přidání passthrough pro soubory .txt
+    eleventyConfig.addPassthroughCopy("*.txt");
+
+    // Přidání passthrough pro soubory .xml
+    eleventyConfig.addPassthroughCopy("*.xml");
+
     return {
         // možné formáty šablon
         templateFormats: ["njk", "html", "md"],
