@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/TerkaSm/PROJEKT-zaverecny-eleventy.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["adopce koček", "útulek", "útulek pro kočky", "kočičí azyl", "virtuální adopce", "kočka k adopci", "kočky útulek", "koťata k adopci", "koťata z ůtulku", "dary pro kočičí útulek", "útulek pro opuštěné kočky", "dobrovolníci v kočičím útulku"],
+  "author": "Tereza Smolová",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TerkaSm/PROJEKT-zaverecny-eleventy/issues"

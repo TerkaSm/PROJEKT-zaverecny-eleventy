@@ -871,6 +871,10 @@ li {
 .text__paragraph--little-margin {
   margin: 20px;
 }
+.text__paragraph--align-start {
+  text-align: start;
+  margin-left: 0;
+}
 .text__span {
   color: #C53607;
 }

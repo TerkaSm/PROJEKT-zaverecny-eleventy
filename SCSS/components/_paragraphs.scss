@@ -40,6 +40,11 @@
         &--little-margin {
             margin: 20px;
         }
+
+        &--align-start {
+            text-align: start;
+            margin-left: 0;
+        }
     }
 
     &__span {
