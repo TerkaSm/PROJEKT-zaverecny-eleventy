@@ -1,2 +1,4 @@
+Sitemap: https://kocici-azyl.dev/sitemap.xml
+
 User-agent: *
 Disallow: /tajny-obsah/
