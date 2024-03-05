@@ -6,12 +6,25 @@
   "scripts": {
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve"
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TerkaSm/PROJEKT-zaverecny-eleventy.git"
   },
-  "keywords": ["adopce koček", "útulek", "útulek pro kočky", "kočičí azyl", "virtuální adopce", "kočka k adopci", "kočky útulek", "koťata k adopci", "koťata z ůtulku", "dary pro kočičí útulek", "útulek pro opuštěné kočky", "dobrovolníci v kočičím útulku"],
+  "keywords": [
+    "adopce koček",
+    "útulek",
+    "útulek pro kočky",
+    "kočičí azyl",
+    "virtuální adopce",
+    "kočka k adopci",
+    "kočky útulek",
+    "koťata k adopci",
+    "koťata z ůtulku",
+    "dary pro kočičí útulek",
+    "útulek pro opuštěné kočky",
+    "dobrovolníci v kočičím útulku"
+  ],
   "author": "Tereza Smolová",
   "license": "ISC",
   "bugs": {
