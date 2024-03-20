@@ -1,5 +1,24 @@
 [
     {
+        "jmeno": "Frank",
+        "foto": "frank.jpeg",
+        "vek": "5 měsíců",
+        "pohlavi": "kocour",
+        "plemeno": "kočka domácí",
+        "deti": "ano",
+        "pes": "otaznik",
+        "byt": "ano",
+        "jinakocka": "ano",
+        "zacatecnik": "ano",
+        "kontaktni": "ano",
+        "zahrada": "otaznik",
+        "ockovani": "ano",
+        "kastrace": "ano",
+        "handicap": "ne",
+        "barva": "černo-bílá",
+        "tagy": "vse kocour cernobila kote",
+        "popis": "Věk cca 5 měsíců, očkovaný, testy na Felv a FIV negativní, úžasný mazel hledá milující domov."
+    },{
         "jmeno": "Vilík",
         "foto": "vilik.jpg",
         "vek": "1 rok",
